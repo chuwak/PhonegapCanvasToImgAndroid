@@ -22,11 +22,11 @@
     <!-- android -->
     <platform name="android">
 
-        <source-file src="src/android/com/phonegap/plugins/CanvasPlugin.java" target-dir="src/com/phonegap/plugins/canvasplugin" />
+        <source-file src="src/android/com/apes/plugins/CanvasPlugin.java" target-dir="src/com/apes/plugins/canvasplugin" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="CanvasPlugin">
-                <param name="android-package" value="com.phonegap.plugins.CanvasPlugin" />
+                <param name="android-package" value="com.apes.plugins.CanvasPlugin" />
             </feature>
         </config-file>
 
