@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.apes.plugins.CanvasToDataURL"
-    version="1.0.4">
+    version="1.0.5">
 
     <name>CanvasToImgAndroid</name>
     <description>Add toDataURL analog to android 2.x  Browsers.</description>
@@ -12,8 +12,8 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>    
 
-    <js-module src="www/canvas_plugin.js" name="CanvasPlugin">
-        <clobbers target="CanvasPlugin" />
+    <js-module src="www/canvas_plugin.js" name="CanvasToDataURL">
+        <clobbers target="CanvasToDataURL" />
     </js-module>
 <!--
     <asset src="www/canvas_plugin.js" target="canvas_plugin.js" />
@@ -22,11 +22,11 @@
     <!-- android -->
     <platform name="android">
 
-        <source-file src="src/android/com/apes/plugins/CanvasPlugin.java" target-dir="src/com/apes/plugins/canvasplugin" />
+        <source-file src="src/android/com/apes/plugins/CanvasToDataURL.java" target-dir="src/com/apes/plugins/CanvasToDataURL" />
         
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="CanvasPlugin">
-                <param name="android-package" value="com.apes.plugins.CanvasPlugin" />
+            <feature name="CanvasToDataURL">
+                <param name="android-package" value="com.apes.plugins.CanvasToDataURL" />
             </feature>
         </config-file>
 
