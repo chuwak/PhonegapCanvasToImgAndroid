@@ -4,7 +4,7 @@
  * Valid mime types: image/png, image/jpeg
  * Limitations: JPEG quality level hard-coded in this class
  */
-package org.apache.cordova.plugin;
+package com.apes.plugins;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
