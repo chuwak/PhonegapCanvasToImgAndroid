@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.apache.cordova.plugin.CanvasToDataURL"
+    id="com.phonegap.plugins.CanvasToDataURL"
     version="0.1.0">
 
     <name>CanvasToImgAndroid</name>
@@ -21,11 +21,11 @@
     <!-- android -->
     <platform name="android">
 
-        <source-file src="src/android/org/apache/cordova/plugin/CanvasPlugin.java" target-dir="src/org/apache/cordova/plugin/canvasplugin" />
+        <source-file src="src/android/com/phonegap/plugins/CanvasPlugin.java" target-dir="src/com/phonegap/plugins/canvasplugin" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="CanvasPlugin">
-                <param name="android-package" value="org.apache.cordova.plugin.CanvasPlugin" />
+                <param name="android-package" value="com.phonegap.plugins.CanvasPlugin" />
             </feature>
         </config-file>
 
