@@ -11,7 +11,7 @@ window.canvasplugin = function(canvasEl,callback){
 	//call the Plugin execute method()
 	cordova.exec(callback,function(err){
 		callback('Error: ' + err);	
-	},"CanvasPlugin","toDataURL",[canvasProps.mimeType,
+	},"CanvasToDataURL","toDataURL",[canvasProps.mimeType,
 							canvasProps.xpos,
 							canvasProps.ypos,
 							canvasProps.width,
