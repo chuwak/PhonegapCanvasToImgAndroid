@@ -19,7 +19,7 @@ com.apes.plugins.CanvasToDataURL=https://github.com/chuwak/PhonegapCanvasToImgAn
 
 ##How to use
 ```
-    var $canvas = getElememtById('your-canvas-id');
+    var canvas = getElememtById('your-canvas-id');
     var canvasData = canvas.toDataURL();
     if (canvasData === 'data:,' || canvasData.length < 10) {
         window.canvasplugin(canvas, function(val) {
