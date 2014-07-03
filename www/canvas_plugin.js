@@ -1,5 +1,8 @@
 window.canvasplugin = function(canvasEl, offset, type, callback) {
     var mineType = (type ? type : "image/png");
+	if(mineType !== "image/png" || mineType !== "image/jpeg"){
+		mineType = "image/png";
+	}
     var xpos = canvasEl.offsetLeft;
     var ypos = canvasEl.offsetTop;
     var width = canvasEl.width;

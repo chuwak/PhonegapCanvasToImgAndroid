@@ -22,11 +22,27 @@ com.apes.plugins.CanvasToDataURL=https://github.com/chuwak/PhonegapCanvasToImgAn
     var canvas = getElememtById('your-canvas-id');
     var canvasData = canvas.toDataURL();
     if (canvasData === 'data:,' || canvasData.length < 10) {
-        window.canvasplugin(canvas, function(val) {
+        window.canvasplugin(canvas, offset, 'image/png', function(val) {
             canvasData = val.data;
         });
     }
 ```
 
+parameters for function  canvasplugin(canvas, offset, type, callback)
+canvas - canvas html element
+offset - js object, which contains bounds of screen image
+```
+// includes jquery
+	var offset = {
+		left: $canvas.offset().left,
+		top: $canvas.offset().top,
+		width: $canvas.width(),
+		height: $canvas.height()
+	};
+```
+this object need, when canvas element is absolute positioned, and functions canvas.offsetTop and canvas.offset returns 0.
 
-method is synchronous and callback for function may not use.
+type is mimeType of returned image, by default is 'png',  allowed values is 'image/png'  and 'image/jpeg'
+
+callback - synchronous callback îf plugin
+
