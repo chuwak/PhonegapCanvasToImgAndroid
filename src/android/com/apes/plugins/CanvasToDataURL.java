@@ -4,7 +4,7 @@
  * Valid mime types: image/png, image/jpeg
  * Limitations: JPEG quality level hard-coded in this class
  */
-package org.apache.cordova.plugin;
+package com.apes.plugins;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -19,7 +19,7 @@ import android.util.Base64;
 import java.io.ByteArrayOutputStream;
 //import org.apache.commons.codec.binary.Base64;
 
-public class CanvasPlugin extends CordovaPlugin {
+public class CanvasToDataURL extends CordovaPlugin {
 	
 	public static final String ACTION = "toDataURL";
 	
